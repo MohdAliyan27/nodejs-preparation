@@ -1,6 +1,5 @@
 List of 100 Node.js interview questions:
-Youtuble Links:
-1. https://www.youtube.com/watch?v=kJebPUYuLD4&t=1961s
+Youtuble Links:https://www.youtube.com/watch?v=kJebPUYuLD4&t=1961s
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 1. What is Node.js and why is it used?
 Answer: Node.js is a powerful, open-source, server-side runtime environment built on Chrome's V8 JavaScript engine. It enables developers to use JavaScript to write server-side code, which traditionally was handled by other languages like PHP, Python, or Java. This allows for JavaScript to be used across the entire stack(i.e, frontend and backend), promoting a unified development experience.
