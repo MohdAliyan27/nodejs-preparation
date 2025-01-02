@@ -328,7 +328,7 @@ Imagine you're the director of a play, and the process object is your stage mana
 📣 It listens for audience feedback or special events (system signals).
 🚪 And it ensures the curtain closes at the right time (program lifecycle).
 
-Without the process object, your Node.js app would feel like a disorganized production! 🎉
+Without the stage manager, the play would lose its structure, timing, and order—just like a Node.js app without the process object.
 
 -----------------------------------------------------------------------------------
 19. How can you manage environment variables in Node.js applications?
