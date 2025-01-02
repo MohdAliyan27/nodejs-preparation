@@ -1,5 +1,7 @@
 List of 100 Node.js interview questions:
-
+Youtuble Links:
+1. https://www.youtube.com/watch?v=kJebPUYuLD4&t=1961s
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 1. What is Node.js and why is it used?
 Answer: Node.js is a powerful, open-source, server-side runtime environment built on Chrome's V8 JavaScript engine. It enables developers to use JavaScript to write server-side code, which traditionally was handled by other languages like PHP, Python, or Java. This allows for JavaScript to be used across the entire stack(i.e, frontend and backend), promoting a unified development experience.
 
@@ -306,9 +308,27 @@ Transform Streams – These allow data to be modified while being read or writte
 
 Real-time Example: 
 Imagine you’re downloading a large video file. Instead of waiting for the entire video to download before you can start watching, you can start streaming the video and watch it as the data comes in. This is how Node.js streams work, by handling data in chunks instead of waiting for the complete data.
-
 -----------------------------------------------------------------------------------
 18. What is the purpose of the `process` object in Node.js?
+Answer: 🌟 Learning Node.js? Here's a Cool Analogy to Understand the process Object! 🌟
+
+While preparing for my Node.js interviews, I came across the process object, and I wanted to share a simple way I understood it (with a fun analogy too!).
+
+The process object in Node.js is like the control room of your application 🚀. It's where you:
+✅ Get runtime information (like the Node.js version or platform).
+✅ Access environment settings (process.env for secrets like API keys).
+✅ Manage inputs and outputs (e.g., process.stdin for input, process.stdout for logs).
+✅ Handle system signals (like gracefully shutting down when someone hits Ctrl+C).
+✅ Control the app's lifecycle (e.g., exiting the app with process.exit()).
+
+Analogy Time 🕰️:
+Imagine you're the director of a play, and the process object is your stage manager:
+🎭 It tracks who’s in the play (environment info).
+🎬 It handles props and cues (inputs and outputs).
+📣 It listens for audience feedback or special events (system signals).
+🚪 And it ensures the curtain closes at the right time (program lifecycle).
+
+Without the process object, your Node.js app would feel like a disorganized production! 🎉
 
 -----------------------------------------------------------------------------------
 19. How can you manage environment variables in Node.js applications?
