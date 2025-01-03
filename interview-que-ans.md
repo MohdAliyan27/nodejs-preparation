@@ -346,6 +346,21 @@ Did you know you can keep your sensitive information like API keys and database 
 To manage environment variables in Node.js applications, you can use the built-in process.env object to access them. However, for a more secure and organized approach, it's common to use a package like dotenv. With dotenv, you can store environment-specific configurations, like API keys or database credentials, in a .env file. This file should not be committed to version control to keep sensitive data secure. To set it up, you install dotenv, require it at the top of your main file (e.g., require('dotenv').config()), and then access variables using process.env.VARIABLE_NAME. This method helps separate configuration from code, making your application easier to manage and more secure.
 -----------------------------------------------------------------------------------
 20. What is the role of `package.json` in a Node.js project?
+    The package.json file is the blueprint of your project’s ecosystem. It defines everything from the project’s name, version, and purpose to its dependencies (tools and libraries it relies on) and scripts (commands to automate tasks). Think of it as the guidebook for your application. Without it, managing or sharing your project would be a headache!
+
+
+
+Example:
+
+Imagine your project is a restaurant, and package.json is its menu card:
+
+It displays the restaurant's name and theme (project name and purpose).
+
+Lists all the dishes (dependencies) needed for the experience.
+
+Provides special instructions, like “served hot” or “best with a drink” (scripts for automating tasks).
+
+With this menu, chefs and servers (developers) know exactly what to prepare and how to serve, while customers (other developers or users) know what to expect. Similarly, package.json ensures your project is organized, predictable, and easy for others to contribute to.
 
 -----------------------------------------------------------------------------------
 21. How do you create and use custom modules in Node.js?
