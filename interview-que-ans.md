@@ -365,6 +365,29 @@ With this menu, chefs and servers (developers) know exactly what to prepare and 
 -----------------------------------------------------------------------------------
 21. How do you create and use custom modules in Node.js?
 
+    To create and use custom modules in Node.js, think of a custom module as a way to organize and reuse your code. It’s like writing a small chunk of functionality in one file and using it in another. Here's how you can do it step by step:
+
+Create a Module: Write your custom functionality in a separate JavaScript file. For example, create a file called mathUtils.js and export the functionality using module.exports.
+Use the Module: Import the module into another file where you need it using require.
+Path for Custom Modules: When requiring custom modules, use ./ for the correct relative path to the file.
+Reusability: This approach makes your code reusable and easier to maintain. If you need to update a utility, you only have to do it in one place.
+
+Example: Imagine you’re baking a cake. Instead of making the flour, sugar, and butter mixture every time from scratch, you prepare it in advance (custom module) and store it in a jar (file). Now, whenever you want to bake, you just take the jar (import the module), and you’re ready to go. It saves time, keeps your kitchen organized, and ensures consistent results!
+  // mathUtils.js
+function add(a, b) {
+    return a + b;
+}
+function multiply(a, b) {
+    return a * b;
+}
+module.exports = { add, multiply }; 
+
+// app.js
+const mathUtils = require('./mathUtils');
+console.log(mathUtils.add(5, 3)); // Output: 8
+console.log(mathUtils.multiply(5, 3)); // Output: 15
+
+
 -----------------------------------------------------------------------------------
 22. Explain the concept of the `buffer` in Node.js.
 
