@@ -4,21 +4,19 @@
  
 ## **Basic Node.js Questions**  
 1. What is Node.js?
-   
-Answer:    
-(1). Definition & Key Features
+   1. Definition & Key Features
 Node.js is an open-source (free and publicly available) and cross-platform (runs on Windows, macOS, and Linux) JavaScript runtime environment that allows JavaScript to execute outside the browser.
 Built on Google’s V8 engine, it compiles JavaScript to machine code for fast execution.
 It enables full-stack JavaScript development, allowing developers to use JavaScript for both frontend and backend.
-(2). Architecture & Performance
+  2. Architecture & Performance
 Single-Threaded, Event-Driven Model (Node.js uses a single thread to handle multiple requests simultaneously without waiting for one to finish before moving to the next, thanks to its event-driven architecture). It is powered by libuv, a C++ library that enables non-blocking I/O operations.
 Non-Blocking I/O: Unlike traditional servers that wait for tasks to complete, Node.js delegates tasks (like database queries, file operations) and moves to the next request.
 Event Loop Mechanism: The event loop listens for completed tasks and executes callback functions when data is ready, making it highly efficient.
-(3). Modular & Scalable Development
+   3. Modular & Scalable Development
 Uses CommonJS modules (require() & module.exports) for modularity.
 Supports npm (Node Package Manager), providing access to a vast ecosystem of libraries.
 Best suited for microservices architecture, breaking applications into independent services for better scalability.
-(4). Common Use Cases
+  4. Common Use Cases
 a) Real-Time Applications
 Chat Applications (WhatsApp Web, Slack) use WebSockets for instant messaging.
 Live Streaming (Netflix, YouTube Live) transmits chunked data for smooth playback.
@@ -30,6 +28,8 @@ c) IoT (Internet of Things)
 Smart Homes (Alexa, Google Nest) process sensor data efficiently.
 Wearable Tech (Fitbit, Apple Watch) requires lightweight, fast backend communication.
 Industrial IoT monitors factory equipment and sensors in real time.
+
+   
 ---
 2. What are the key features of Node.js?  
 3. How does Node.js differ from JavaScript in the browser?  
