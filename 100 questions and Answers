@@ -23,12 +23,9 @@ Live Streaming (Netflix, YouTube Live) transmits chunked data for smooth playbac
 Stock Market & Multiplayer Games require real-time data updates using WebSockets.
 b) Microservices & Serverless Applications
 Microservices (Netflix, Uber) split applications into smaller, independent services for scalability.
-Serverless Functions (AWS Lambda, Google Cloud Functions) execute code without managing servers.
 c) IoT (Internet of Things)
 Smart Homes (Alexa, Google Nest) process sensor data efficiently.
 Wearable Tech (Fitbit, Apple Watch) requires lightweight, fast backend communication.
-Industrial IoT monitors factory equipment and sensors in real time.
-
    
 ---
 2. What are the key features of Node.js?  
