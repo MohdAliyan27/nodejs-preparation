@@ -5,7 +5,7 @@
 ## **Basic Node.js Questions**  
 
 1. What is Node.js?
-- Node.js is an open-source (free and publicly available) and cross-platform (runs on Windows, macOS, and Linux) JavaScript runtime that allows JavaScript to run outside the browser.  
+- Node.js is an open-source (free and publicly available) and cross-platform (runs on Windows, macOS, and Linux) JavaScript runtime environment that allows JavaScript to run outside the browser.  
 - It is built on Google’s V8 engine, which compiles JavaScript into machine code for fast execution.  
 - It enables full-stack JavaScript development, allowing developers to use JavaScript for both frontend and backend.  
 - Node.js follows a single-threaded, event-driven model, handling multiple requests simultaneously without blocking.  
