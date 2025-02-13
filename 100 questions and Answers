@@ -18,17 +18,68 @@
 - Used in real-time applications like chat apps, live streaming platforms, stock market applications, and multiplayer games, utilizing WebSockets for instant data updates.  
 - Supports microservices-based applications like Netflix and Uber, ensuring scalability and independence.  
 - Used in IoT applications such as smart homes (Alexa, Google Nest) and wearable devices (Fitbit, Apple Watch) for efficient data processing.
----
-2. What are the key features of Node.js?  
-3. How does Node.js differ from JavaScript in the browser?  
-4. What is the role of V8 in Node.js?  
-5. Explain the event-driven architecture in Node.js.  
-6. What is the difference between asynchronous and synchronous programming in Node.js?  
-7. What is the difference between Node.js and other backend technologies like Java or Python?  
-8. What is NPM (Node Package Manager)?  
-9. How do you install packages using NPM?  
-10. What is the difference between dependencies and devDependencies in package.json?  
- 
+
+2. What are the key features of Node.js?
+- Asynchronous & Non-blocking I/O – Handles multiple tasks simultaneously without waiting for previous operations to complete.
+- Single-threaded Event Loop – Uses a single-threaded model with an event-driven approach to manage concurrent operations.
+- Fast Execution – Built on Google’s V8 engine, which compiles JavaScript into machine code for high performance.
+- Cross-platform Compatibility – Works on Windows, macOS, and Linux.
+- Scalability – Supports microservices architecture, allowing applications to be broken into independent services. This helps scale different parts of an application separately, improves fault isolation, and allows teams to develop and deploy services independently. Companies like Netflix and Uber use Node.js for scalable applications.
+- Rich Ecosystem – Offers thousands of third-party libraries via npm.
+- Built-in Modules – Provides core modules like fs, http, path, and crypto for handling common tasks.
+- Efficient Data Streaming – Handles large file transfers and data streaming efficiently.
+- WebSockets Support – Enables real-time communication in apps like chat and gaming.
+
+3. How does Node.js differ from JavaScript in the browser?
+- Node.js runs outside the browser, while JavaScript in the browser runs inside the browser environment.
+- Node.js is mainly used for backend development, whereas browser JavaScript is used for frontend development.
+- Node.js has access to file systems, databases, and the operating system, while browser JavaScript is limited to DOM manipulation and browser APIs.
+- Node.js uses CommonJS modules (require()), while browser JavaScript typically uses ES modules (import/export).
+- Node.js is built on V8 but runs independently, whereas browser JavaScript runs inside the browser’s security constraints.
+
+4. What is the role of V8 in Node.js?
+- V8 is Google's high-performance JavaScript engine used in Chrome and Node.js.
+- It compiles JavaScript into machine code using Just-In-Time (JIT) compilation for faster execution.
+- Provides automatic memory management and garbage collection for performance optimization.
+- Allows Node.js to execute JavaScript outside the browser efficiently.
+
+5. Explain the event-driven architecture in Node.js.
+- Node.js follows an event-driven architecture, meaning it responds to events as they occur rather than executing code sequentially.
+- The Event Loop continuously listens for events such as file reads, API requests, or database queries.
+- Instead of waiting for an operation to complete, Node.js registers event listeners and executes callback functions when data is ready.
+- This approach makes Node.js highly efficient, as it can handle multiple requests without blocking execution.
+- Common examples of event-driven programming in Node.js include handling HTTP requests, reading files, and database queries.
+
+6. What is the difference between asynchronous and synchronous programming in Node.js?
+- Synchronous programming executes code line by line, blocking further execution until a task is completed.
+- Asynchronous programming does not wait for tasks to complete and continues execution, improving efficiency.
+- Node.js is designed to be asynchronous and non-blocking, making it ideal for handling multiple tasks simultaneously.
+- Asynchronous programming improves performance in tasks like file handling, API requests, and database queries.
+
+7. What is the difference between Node.js and other backend technologies like Java or Python?
+- Node.js is single-threaded and event-driven, whereas Java and Python are multi-threaded.
+- Node.js is optimized for I/O-intensive applications, while Java and Python are better suited for CPU-intensive tasks.
+- Node.js is lightweight and efficient for real-time applications, whereas Java is commonly used in enterprise applications and Python in data science and AI.
+- Node.js uses JavaScript, which allows full-stack development, while Java and Python require different languages for frontend and backend.
+- Node.js has npm, Java has Maven/Gradle, and Python has pip for package management.
+
+8. What is NPM (Node Package Manager)?
+- npm (Node Package Manager) is the default package manager for Node.js, used to install and manage JavaScript libraries.
+- Provides access to millions of open-source packages to extend functionality.
+- Comes pre-installed with Node.js.
+- Used to manage dependencies required for a project.
+
+9. How do you install packages using NPM?
+- Install a package globally using npm install -g package-name.
+- Install a package locally for a specific project using npm install package-name.
+- Add a package as a development dependency using npm install package-name --save-dev.
+- Install all dependencies listed in package.json using npm install.
+
+10. What is the difference between dependencies and devDependencies in package.json?
+- Dependencies are required for production and include essential packages like Express, Mongoose, etc.
+- devDependencies are only needed for development and include tools like Jest (for testing) and Nodemon (for automatic restarts).
+- Dependencies are installed when deploying an application, while devDependencies are only installed in development environments.
+
 ---
  
 ## **Node.js Modules & Require System**  
