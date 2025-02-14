@@ -84,16 +84,80 @@
  
 ## **Node.js Modules & Require System**  
 11. What are Node.js modules?  
+Node.js modules are reusable blocks of code that help organize and structure applications. They can be built-in (like fs, http), third-party (installed via npm), or custom-made. Modules in Node.js follow the modular programming concept, making code more maintainable and reusable.
+
 12. What are CommonJS and ES modules?  
+CommonJS (CJS) and ES Modules (ESM) are two module systems in Node.js:
+CommonJS (CJS): The default module system in Node.js. It uses require() to import and module.exports to export.
+ES Modules (ESM): A modern module system that follows ECMAScript standards. It uses import and export. ESM provides better support for asynchronous loading.
+
 13. How do you create and export a module in Node.js?  
+To create a module in Node.js, you define your functions or objects in a separate file and export them using module.exports or exports.
+// math.js
+function add(a, b) {
+    return a + b;
+}
+module.exports = add;
+Now, you can import this module using:
+const add = require('./math');
+console.log(add(2, 3)); // Output: 5
+
 14. What is the difference between `require` and `import` in Node.js?  
+require(): Used in CommonJS modules, it loads modules synchronously.
+import: Used in ES Modules, it supports asynchronous loading and allows tree-shaking for better performance.
+
 15. What is the purpose of `module.exports` and `exports`?  
+module.exports: The primary way to export values (functions, objects, etc.) from a module.
+exports: A shorthand reference to module.exports. If you directly assign a new value to exports, it will break the reference.
+// Correct usage
+module.exports = { greet: () => console.log("Hello!") };
+// Incorrect usage
+exports = { greet: () => console.log("Hello!") }; // This won't work
+
 16. What are built-in modules in Node.js?  
+Built-in modules are core modules that come with Node.js. Some common ones are:
+fs (File System) – Handles file operations
+http – Creates HTTP servers
+path – Works with file paths
+os – Provides OS-related information
+events – Handles event-driven programming
+
 17. Explain how you would use the `fs` module to read a file in Node.js.  
+The fs module provides methods to read files synchronously and asynchronously.
+Example (Asynchronous method):
+const fs = require('fs');
+fs.readFile('example.txt', 'utf8', (err, data) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+
 18. How do you handle module caching in Node.js?  
+Node.js caches modules when they are first required to improve performance. The cached module is stored in require.cache.
+To clear the cache and reload a module:
+delete require.cache[require.resolve('./module')];
+const myModule = require('./module');
+This ensures you get a fresh copy of the module instead of the cached version.
+
 19. What is the difference between global and local modules in Node.js?  
+Global modules are installed system-wide using npm install -g <package> and can be used across different projects.
+Local modules are installed within a project directory (node_modules) and are only available to that specific project.
+npm install express  # Local module
+npm install -g nodemon  # Global module
+
 20. How do you create a custom module in Node.js?  
- 
+To create a custom module, define your functionality in a separate file and export it.
+Example:
+// greet.js
+function sayHello(name) {
+    return `Hello, ${name}!`;
+}
+module.exports = sayHello;
+Then, import and use it in another file:
+const greet = require('./greet');
+console.log(greet('Keshav')); // Output: Hello, Keshav!
 ---
  
 ## **Event Loop & Asynchronous Programming**  
